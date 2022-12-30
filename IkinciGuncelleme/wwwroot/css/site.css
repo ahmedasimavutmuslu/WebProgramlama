@@ -1,0 +1,96 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    background-color: #d4c9c9;
+    background-image: url(https://i.hizliresim.com/dlc291w.jpg);
+    
+}
+
+
+
+.flex-container {
+    display: inline-flex;
+    flex-wrap: wrap;
+    max-width:100%;
+    
+}
+
+.flex-direction {
+    flex-direction: row;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 340px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    min-width: 200px;
+    flex: 1;
+    border-right: 2px solid black;
+    margin-right:60px;
+    margin-left:60px;
+    margin-bottom:50px;
+    height:700px;
+    min-height:400px;
+    font-size-adjust:inherit;
+   
+}
+
+@media screen and (max-width: 500px) {
+    .flex-direction {
+        flex-direction: column;
+    }
+
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        max-width: 378px;
+        text-align: center;
+        font-family: arial;
+        min-width: 200px;
+        flex: 1;
+        border-bottom: 2px solid black;
+        border-right: none;
+        vertical-align: central;
+        align-items: center;
+    }
+}
+
+
+
+
+    .price {
+        color: grey;
+        font-size: 22px;
+    }
+
+    .card button {
+        border: none;
+        outline: 0;
+        padding: 12px;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        font-size: 18px;
+        align-items:end;
+    }
+
+        .card button:hover {
+            opacity: 0.7;
+        }
